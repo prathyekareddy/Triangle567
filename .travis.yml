@@ -7,4 +7,4 @@ python:
 before_script:
   - composer install --no-interaction
 script:
-  - C:\Users\Prathyeka Reddy\Triangle567\Triangle567 
+  - C:\Users\Prathyeka Reddy\Triangle567
