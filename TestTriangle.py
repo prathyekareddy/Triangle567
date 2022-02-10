@@ -27,23 +27,11 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classifyTriangle(-2,-3,-4),"InvalidInput","-2,-3,-4 are Invalid Inputs")
         self.assertEqual(classifyTriangle(200,300,400),"InvalidInput","200,300,400 are Invalid Inputs")
         self.assertEqual(classifyTriangle(7,9,16),'NotATriangle','7,9,16 are Invalid Inputs')
+
+    def testEquilateralTriangles(self): 
         self.assertEqual(classifyTriangle(1,1,1),'Equilateral','1,1,1 should be equilateral')
-        self.assertEqual(classifyTriangle(-6,-6,-6),"Equilateral","-6,-6,-6 is a Equilateral")
-        self.assertEqual(classifyTriangle(200,200,200),"Equilateral","200,200,200 is a Equilateral")
-
-    def testScaleneTriangles(self): 
-        self.assertEqual(classifyTriangle(4,9,2),'Scalene','4,9,2 should be Scalene')
-        self.assertEqual(classifyTriangle(-4,-9,-2),'Scalene','-4,-9,-2 should be Scalene')
-        self.assertEqual(classifyTriangle(400,900,200),'Scalene','400,900,200 should be Scalene')
-        
-    def testIsocelesTriangles(self): 
-        self.assertEqual(classifyTriangle(4,9,4),'Isoceles','4,9,2 should be Isoceles')  
-        self.assertEqual(classifyTriangle(-4,-9,-4),'Isoceles','-4,-9,-2 should be Isoceles')  
-        self.assertEqual(classifyTriangle(400,900,400),'Isoceles','400,900,200 should be Isoceles')    
-
         self.assertEqual(classifyTriangle(6,6,6),"Equilateral","6,6,- is a Equilateral")
         self.assertEqual(classifyTriangle(40,40,40),"Equilateral","40,40,40 is a Equilateral")
-
 
     def testScaleneTriangles(self): 
         self.assertEqual(classifyTriangle(4,9,8),'Scalene','4,9,2 should be Scalene')
